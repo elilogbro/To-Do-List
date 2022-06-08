@@ -3,3 +3,9 @@ body {
     text-align: center;
     font-family: "Papyrus";
 }
+
+.button-2 {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
