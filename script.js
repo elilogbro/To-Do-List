@@ -1,20 +1,9 @@
-let list = [];
-
-const addToList = (ev)=>{
-    ev.preventDefault();
-    let toDo = {
-        submit: document.getElementById("text-box").value
+window.onload = function() {
+    document.getElementById("submit-btn").addEventListener("click", function() {
+        console.log('click happened');
+            let text = document.getElementById("text-box").value;
+            let li = document.createElement("li");
+            li.innerText = text;
+            document.getElementById("unordered-list").appendChild(li);
     }
-    list.push(toDo);
-    document.querySelector('form').reset();
-
-    console.warn('added' , {list} );
-
-let pre = document.querySelector('#msg pre');
-pre.textContent = '\n' + JSON.stringify(list, '\t', 2);
-
-localStorage.setItem('MyToDoList', JSON.stringify(list) )
-}
-document.addEventListener('DOMContentLoaded', ()=>{
-    document.getElementById('submit-btn').addEventListener('click', addToList);
-});
+)};
