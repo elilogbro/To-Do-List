@@ -16,5 +16,5 @@ pre.textContent = '\n' + JSON.stringify(list, '\t', 2);
 localStorage.setItem('MyToDoList', JSON.stringify(list) )
 }
 document.addEventListener('DOMContentLoaded', ()=>{
-    document.getElementsByClassName('submit-btn').addEventListener('click', addToList);
+    document.getElementById('submit-btn').addEventListener('click', addToList);
 });
