@@ -8,17 +8,21 @@
         <script src="script.js"></script>
         <header id="to-do-box">
             <h1>To-Do List</h1>
-            <div id="top-half">     
-                <input type="text" name="textBox" placeholder="Add an item!">
-                <button class="btn-group"
-                        type="button">
-                    Submit
-                </button>
-                <button class="btn-group"
-                        type="button">
-                    Clear field
-                </button>
+            <div id="top-half">
+                <form>    
+                <input type="text" id="text-box" placeholder="Add an item!">
+                <button class="submit-btn">Submit</button>
+                <button class="clear-field-btn">Clear field</button>
+                </form> 
             </div>
         </header>
+        <div id="list">
+            <ul>
+                <li>Melofogmilokoairme
+                    <button class="x-button">X</button>
+                    <button class="done-button">Done</button>
+                </li>
+            </ul>
+        </div>
    </body>
 </html>
