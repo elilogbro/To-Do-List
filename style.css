@@ -47,3 +47,17 @@ input[type="text"] {
 #form {
     font-size: 16px;
 }
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+    font-size: 26px;
+}
+
+.myClass {
+    text-decoration: line-through;
+}
